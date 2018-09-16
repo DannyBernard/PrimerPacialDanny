@@ -91,5 +91,8 @@
   <ItemGroup>
     <Folder Include="BLL\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\PrimerParcial.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

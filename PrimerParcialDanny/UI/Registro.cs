@@ -180,6 +180,7 @@ namespace PrimerParcialDanny.UI
             decimal retencion = porciento * sueldo;
 
             TotaltextBox.Text = Convert.ToString(retencion);
+
         }
     }
 

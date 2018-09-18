@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrimerParcialDanny.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace PrimerParcialDanny
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro registro = new Registro();
+            registro.Show();
+           
         }
     }
 }

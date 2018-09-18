@@ -11,7 +11,7 @@ namespace PrimerParcialDanny.DAL
 {
     class Contexto: DbContext
     {
-        public DbSet<Articulos> Articulos { get; set; }
+        public DbSet<Vendedores> Vendedores { get; set; }
 
         public Contexto() : base("ConStr")
        {

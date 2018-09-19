@@ -39,6 +39,7 @@ namespace PrimerParcialDanny.UI
             vendedores.Nombre = NombretextBox.Text;
             vendedores.Sueldo = Convert.ToDecimal(SueldonumericUpDown.Value);
             vendedores.Retencion = Convert.ToDecimal(RetencionnumericUpDown.Value);
+            vendedores.Total = Convert.ToDecimal(TotaltextBox.Text);
 
             return vendedores;
         }
@@ -129,6 +130,7 @@ namespace PrimerParcialDanny.UI
             SueldonumericUpDown.Value = vendedores.Sueldo;
             RetencionnumericUpDown.Value = vendedores.Retencion;
             TotaltextBox.Text = Convert.ToString(vendedores.Total);
+
 
         }
 

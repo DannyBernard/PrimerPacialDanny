@@ -1,4 +1,5 @@
 ﻿using PrimerParcialDanny.UI;
+using PrimerParcialDanny.UI.Consulta;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,12 @@ namespace PrimerParcialDanny
             Registro registro = new Registro();
             registro.Show();
            
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CVendedores vendedores = new CVendedores();
+            vendedores.Show();
         }
     }
 }

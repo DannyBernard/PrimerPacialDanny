@@ -40,6 +40,7 @@ namespace PrimerParcialDanny.UI
             vendedores.Sueldo = Convert.ToDecimal(SueldonumericUpDown.Value);
             vendedores.Retencion = Convert.ToDecimal(RetencionnumericUpDown.Value);
             vendedores.Total = Convert.ToDecimal(TotaltextBox.Text);
+            vendedores.Fecha = dateTimePicker1.Value;
 
             return vendedores;
         }
@@ -130,6 +131,7 @@ namespace PrimerParcialDanny.UI
             SueldonumericUpDown.Value = vendedores.Sueldo;
             RetencionnumericUpDown.Value = vendedores.Retencion;
             TotaltextBox.Text = Convert.ToString(vendedores.Total);
+            dateTimePicker1.Value = vendedores.Fecha;
 
 
         }

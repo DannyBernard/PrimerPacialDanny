@@ -18,7 +18,7 @@ namespace PrimerParcialDanny.BLL
             Contexto contexto = new Contexto();
             try
             {
-             if(contexto.Vendedores.Add(vendedores)!= null)
+             if(contexto.Vendedore.Add(vendedores)!= null)
                 {
                     contexto.SaveChanges();
                     paso = true;
@@ -56,8 +56,8 @@ namespace PrimerParcialDanny.BLL
             Contexto contexto = new Contexto();
             try
             {
-                Vendedores vendedores = contexto.Vendedores.Find(id);
-                contexto.Vendedores.Remove(vendedores);
+                Vendedores vendedores = contexto.Vendedore.Find(id);
+                contexto.Vendedore.Remove(vendedores);
                 if (contexto.SaveChanges() > 0)
                 {
                     paso = true;
@@ -76,7 +76,7 @@ namespace PrimerParcialDanny.BLL
             Vendedores vendedores = new Vendedores();
             try
             {
-                vendedores = contexto.Vendedores.Find(id);
+                vendedores = contexto.Vendedore.Find(id);
                 contexto.Dispose();
 
             }
@@ -92,7 +92,7 @@ namespace PrimerParcialDanny.BLL
             Contexto contexto = new Contexto();
             try
             {
-                vendedores = contexto.Vendedores.Where(expression).ToList();
+                vendedores = contexto.Vendedore.Where(expression).ToList();
                 contexto.Dispose();
 
             }

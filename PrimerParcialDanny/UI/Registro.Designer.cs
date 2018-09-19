@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,59 +40,17 @@
             this.RetencionnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.TotaltextBox = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SueldonumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RetencionnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button4
-            // 
-            this.button4.Image = global::PrimerParcialDanny.Properties.Resources.search;
-            this.button4.Location = new System.Drawing.Point(175, 15);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 58);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Buscar";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.Image = global::PrimerParcialDanny.Properties.Resources.delete;
-            this.button3.Location = new System.Drawing.Point(257, 274);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 69);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Eliminar";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Image = global::PrimerParcialDanny.Properties.Resources.save;
-            this.button2.Location = new System.Drawing.Point(141, 274);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 69);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Guarda";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Image = global::PrimerParcialDanny.Properties.Resources.document_new;
-            this.button1.Location = new System.Drawing.Point(28, 274);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 69);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Nuevo";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -137,7 +91,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(81, 217);
+            this.label5.Location = new System.Drawing.Point(172, 221);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 13);
             this.label5.TabIndex = 8;
@@ -192,21 +146,88 @@
             // 
             // TotaltextBox
             // 
-            this.TotaltextBox.Location = new System.Drawing.Point(172, 214);
+            this.TotaltextBox.Location = new System.Drawing.Point(263, 218);
             this.TotaltextBox.Name = "TotaltextBox";
             this.TotaltextBox.ReadOnly = true;
-            this.TotaltextBox.Size = new System.Drawing.Size(111, 20);
+            this.TotaltextBox.Size = new System.Drawing.Size(91, 20);
             this.TotaltextBox.TabIndex = 13;
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // button4
+            // 
+            this.button4.Image = global::PrimerParcialDanny.Properties.Resources.search;
+            this.button4.Location = new System.Drawing.Point(175, 15);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 58);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Buscar";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Image = global::PrimerParcialDanny.Properties.Resources.delete;
+            this.button3.Location = new System.Drawing.Point(261, 303);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 69);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Eliminar";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Image = global::PrimerParcialDanny.Properties.Resources.save;
+            this.button2.Location = new System.Drawing.Point(145, 303);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 69);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Guarda";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Image = global::PrimerParcialDanny.Properties.Resources.document_new;
+            this.button1.Location = new System.Drawing.Point(32, 303);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 69);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Nuevo";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(55, 217);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(111, 20);
+            this.dateTimePicker1.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 221);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Fecha ";
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(381, 348);
+            this.ClientSize = new System.Drawing.Size(381, 384);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.TotaltextBox);
             this.Controls.Add(this.RetencionnumericUpDown);
             this.Controls.Add(this.SueldonumericUpDown);
@@ -249,5 +270,7 @@
         private System.Windows.Forms.NumericUpDown RetencionnumericUpDown;
         private System.Windows.Forms.TextBox TotaltextBox;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

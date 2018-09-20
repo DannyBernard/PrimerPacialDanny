@@ -83,6 +83,13 @@
             // FiltrocomboBox
             // 
             this.FiltrocomboBox.FormattingEnabled = true;
+            this.FiltrocomboBox.Items.AddRange(new object[] {
+            "Todos",
+            "ID",
+            "Nombre",
+            "Sueldo",
+            "Retencion",
+            "Total"});
             this.FiltrocomboBox.Location = new System.Drawing.Point(57, 26);
             this.FiltrocomboBox.Name = "FiltrocomboBox";
             this.FiltrocomboBox.Size = new System.Drawing.Size(132, 21);
@@ -114,9 +121,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 152);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 152);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(616, 213);
+            this.dataGridView1.Size = new System.Drawing.Size(629, 224);
             this.dataGridView1.TabIndex = 8;
             // 
             // button1

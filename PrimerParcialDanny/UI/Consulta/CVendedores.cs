@@ -19,16 +19,17 @@ namespace PrimerParcialDanny.UI.Consulta
         {
             InitializeComponent();
         }
-       
+
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             var listado = new List<Vendedores>();
             if (CriteriotextBox.Text.Trim().Length > 0)
             {
 
 
-                switch (FiltrocomboBox.SelectedItem)
+                switch (FiltrocomboBox.SelectedIndex)
                 {
                     case 0:
                         listado = VendedoresBLL.GetList(p => true);
@@ -38,7 +39,7 @@ namespace PrimerParcialDanny.UI.Consulta
                         listado = VendedoresBLL.GetList(p => p.IDVendedor == id);
                         break;
                     case 2:
-                        listado = VendedoresBLL.GetList(p => p.Nombre.Contains(FiltrocomboBox.Text));
+                        listado = VendedoresBLL.GetList(p => p.Nombre.Contains(CriteriotextBox.Text));
                         break;
                     case 3:
                         decimal sueldo = Convert.ToDecimal(CriteriotextBox.Text);
@@ -53,13 +54,17 @@ namespace PrimerParcialDanny.UI.Consulta
                         listado = VendedoresBLL.GetList(p => p.Total == total);
                         break;
                 }
+                listado = listado.Where(c => c.Fecha >= DesdedateTimePicker.Value.Date && c.Fecha <= HastadateTimePicker.Value.Date).ToList();
             }
-           // listado = listado.Where(c = > c);
-            else
+          
+
+
+
+        else
             {
                 listado = VendedoresBLL.GetList(p => true);
             }
-            dataGridView1.DataSource = null;
+             dataGridView1.DataSource = null;
             dataGridView1.DataSource = listado;
         }
     }
